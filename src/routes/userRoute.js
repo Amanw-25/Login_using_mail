@@ -1,6 +1,5 @@
 import { Router } from "express";
 import passport from "passport";
-import getnewToken from "../middlewares/getnewToken.js";
 import upload from "../middlewares/upload.js";
 import {
   usersignupController,
@@ -22,11 +21,11 @@ Authroutes.route("/passwordchange").post(userpasswordChangeController);
 
 // Protected Routes
 Authroutes.route("/user-profile").post(
-  getnewToken,
+
   passport.authenticate("jwt", { session: false }),
 );
 Authroutes.route("/upload-profile-photo").post(
-  getnewToken,
+
   passport.authenticate("jwt", { session: false }),
   upload.single("file"),
   uploadProfilePhotoController
