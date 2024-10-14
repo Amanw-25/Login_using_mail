@@ -1,40 +1,32 @@
-# Kissan Mitra - Backend
+# Login Using Email
 
-Kissan Mitra is a platform designed to assist farmers by providing crop-specific advice, real-time weather data, market updates, disease and pest identification through image recognition, and a forum for knowledge sharing.
+This project is a backend implementation for a login system where users can sign up and log in using their email addresses. The system sends a welcome email containing a unique username and a randomly generated password upon registration.
 
 ## Table of Contents
 
 - [Features](#features)
-- [Technologies](#technologies)
-- [Getting Started](#getting-started)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Environment Variables](#environment-variables)
-- [Contributing](#contributing)
+- [Email Configuration](#email-configuration)
 - [License](#license)
-- [Contact](#contact)
 
 ## Features
 
-- **Crop-Specific Advice:** Provides expert advice and tips for various crops.
-- **Real-Time Weather Data:** Displays current weather conditions and forecasts.
-- **Market Updates:** Shares market price updates for different crops.
-- **Disease & Pest Identification:** Uses image recognition to identify crop diseases and pests.
-- **Forum:** A platform for farmers to share knowledge and experiences.
+- User signup with email verification.
+- Automatically generated unique usernames.
+- Randomly generated passwords sent via email upon signup.
+- Password change functionality.
+- JWT-based authentication for secure access.
+- Profile photo upload functionality.
 
-## Technologies
+## Technologies Used
 
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Authentication:** JWT (JSON Web Tokens)
-- **Cloud Storage:** Firebase
-- **Image Recognition:** TensorFlow.js (or relevant technology used)
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- Passport.js (for authentication)
+- Nodemailer (for sending emails)
+- JSON Web Token (JWT) for user authentication
 
-## Getting Started
-
-To set up the backend locally, follow these steps:
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/your-username/kissan-mitra-backend.git
-   cd kissan-mitra-backend
